@@ -17,4 +17,9 @@ steps:
 
 - script: |
     git remote -v
+    sed 's/Hello/Greetings/' <docs/index.html >docs/index2.html
+    mv docs/index2.html docs/index.html
+    git add .
+    git commit -m "change greeting"
+    git push
   displayName: 'Run a multi-line script'
