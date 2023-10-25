@@ -16,6 +16,8 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
+    git config user.name AzurePipeline
+    git config user.email standev+azure@gmail.com
     git remote -v
     sed 's/Hello/Greetings/' <docs/index.html >docs/index2.html
     mv docs/index2.html docs/index.html
