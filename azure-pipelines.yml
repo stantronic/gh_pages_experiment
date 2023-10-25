@@ -23,5 +23,5 @@ steps:
     mv docs/index2.html docs/index.html
     git add .
     git commit -m "change greeting"
-    git push
+    git push origin HEAD:main
   displayName: 'Run a multi-line script'
